@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|right"
+        android:padding="20dp"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:background="#ff696969"
+        android:textColor="#ffffffff" />
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="AND"
+        android:id="@+id/buttonAND"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:onClick="andButtonClicked"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="OR"
+        android:id="@+id/buttonOR"
+        android:layout_alignTop="@+id/buttonAND"
+        android:layout_toEndOf="@+id/buttonAND"
+        android:onClick="orButtonClicked"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="NOT"
+        android:id="@+id/buttonNOT"
+        android:onClick="negateButtonClicked"
+        android:layout_alignTop="@+id/buttonCLEAR"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:text="0"
+        android:id="@+id/button0"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:onClick="addNullClicked"
+        android:layout_above="@+id/button1"
+        android:layout_toEndOf="@+id/buttonBIN" />
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="DEC"
+        android:id="@+id/buttonDEC"
+        android:layout_below="@+id/buttonAND"
+        android:layout_alignParentStart="true"
+        android:onClick="decButtonClicked"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="HEX"
+        android:id="@+id/buttonHEX"
+        android:layout_below="@+id/buttonOR"
+        android:layout_toEndOf="@+id/buttonDEC"
+        android:onClick="hexButtonClicked"/>
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="BIN"
+        android:id="@+id/buttonBIN"
+        android:layout_below="@+id/buttonOR"
+        android:layout_toEndOf="@+id/buttonHEX"
+        android:onClick="binButtonClicked"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:text="1"
+        android:id="@+id/button1"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:onClick="addOneClicked"
+        android:layout_above="@+id/buttonOK"
+        android:layout_toEndOf="@+id/buttonBIN" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="="
+        android:id="@+id/buttonOK"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_below="@+id/buttonBIN"
+        android:layout_alignEnd="@+id/button1"
+        android:onClick="okButtonClicked"
+        android:layout_toEndOf="@+id/buttonBIN"
+        android:layout_alignStart="@+id/buttonBIN" />
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="CLEAR"
+        android:id="@+id/buttonCLEAR"
+        android:onClick="clearButtonClicked"
+        android:layout_alignTop="@+id/buttonOK"
+        android:layout_toStartOf="@+id/buttonBIN"
+        android:textSize="13dp" />
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="80dp"
+        android:text="XOR"
+        android:id="@+id/buttonXOR"
+        android:onClick="xorButtonClicked"
+        android:layout_alignTop="@+id/button0"
+        android:layout_alignStart="@+id/buttonBIN" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BinaryCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="empty_error">Nebylo vloženo číslo</string>
+    <string name="empty_error2">Musíš zadat dvě čísla</string>
+    <string name="title_activity_settings">Nastavení</string>
+    <string name="enable_info_title">Zapnout informační panel</string>
+    <string name="format_display">Formátování displeje</string>
+    <string name="save_button_title">Uložit</string>
+    <string-array name="format_arrays">
+        <item>Žádné</item>
+        <item>Oddělovat tisíce</item>
+        <item>Oddělovat nibbly</item>
+    </string-array>
+</resources>
